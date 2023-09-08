@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+* {
+    font-family: "Cabin";
+}
+/* entire page background color */
+html {
+    background-color: #f5f7ec;;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 20px;
+}
+p {
+    font-size: 15px;
+}
+
+
+.header, .footer, a {
+    background-color:#3a5371;
+    color:#f5f7ec;
+
+}
+.header {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+.menu {
+
+    background: linear-gradient(to right, #3a5371 25%, transparent 0);
+    padding-left:0;
+
+}
+.article {
+    color:#3a5371
+
+}
