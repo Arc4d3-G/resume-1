@@ -10,17 +10,26 @@ html {
 
 /* font sizes */
 h1 {
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 0;
 }
 h2 {
-    font-size: 30px;
+    font-size: 40px;
 }
 h3 {
-    font-size: 20px;
+    font-size: 30px;
 }
 p {
-    font-size: 15px;
+    font-size: 20px;
+}
+label {
+    font-size: 25px;
+}
+input, textarea, option, select{
+    font-size: 20px;
+}
+#menu-ul {
+    font-size: 20px;
 }
 
 /* remove white margins from body */
@@ -28,8 +37,15 @@ body{
     margin: 0;
 }
 
-/* Header, footer style */
-.header, .footer {
+/* Header/hero style */
+.header {
+    background-color:#3a5371;
+    background-image: url(/images/hero.jpg);
+    background-size: 1000px;
+    color:#f5f7ec;
+    padding: 16px;
+}
+.footer {
     background-color:#3a5371;
     color:#f5f7ec;
     padding: 16px;
@@ -60,7 +76,8 @@ img {
 .menu {
     background:#11abb7;
     color:#f5f7ec;
-    margin-right: 80%;
+    display:block;
+    width: 200px;
     padding: 10px;
 
 }
