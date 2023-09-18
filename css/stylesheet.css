@@ -87,3 +87,24 @@ section {
     color:#f5f7ec;
 
 }
+/* Form flexbox */
+.container {
+    width:800px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+.container label {
+    display:block;
+    
+}
+.container input, textarea{
+    width: 300px;
+}
+.container textarea {
+    height: 5rem;
+}
+.container li {
+    margin-bottom: 1rem;
+}
