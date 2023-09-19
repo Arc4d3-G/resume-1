@@ -8,7 +8,7 @@ html {
     background-color: #f5f7ec;;
 }
 
-/* font sizes */
+/* DESKTOP FONT SIZES */
 h1 {
     font-size: 50px;
     margin-top: 0;
@@ -28,62 +28,136 @@ label {
 input, textarea, option, select{
     font-size: 20px;
 }
-#menu-ul {
+.menu-ul {
+    font-size: 25px;
+}
+.ul-skills {
+    font-size:20px;
+}
+.ul-footer {
     font-size: 20px;
 }
+/* MOBILE */
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+    label {
+        font-size: 15px;
+    }
+    input, textarea, option, select{
+        font-size: 15px;
+    }
+    .menu-ul {
+        font-size: 15px;
+    }
+    .ul-skills {
+        font-size: 15px;
+    }
+    .ul-footer {
+        font-size: 15px;
+    }
+}
+
 
 /* remove white margins from body */
 body{
     margin: 0;
 }
 
-/* Header/hero style */
+/* Header/Footer and hero image style */
 .header {
     background-color:#3a5371;
     background-image: url(/images/hero.jpg);
-    background-size: 1000px;
-    color:#f5f7ec;
-    padding: 16px;
-}
-.footer {
-    background-color:#3a5371;
+    background-size:cover;
     color:#f5f7ec;
     padding: 16px;
 }
 
-/* center heading content and add padding */
+
+
+/* Header content alignment & Profile IMG style */
 .header {
     text-align: center;
     display: block;
     padding-bottom: 50px;
 }
 img {
+    max-height: 350px; 
+    max-width: 350px;
     border-style: solid;
     border-color:#f5f7ec;
     border-radius: 50%;
 }
+/* TABLET */
+@media only screen and (max-width: 780px) {
+    img {
+        max-height: 300px; 
+        max-width: 300px;
+        border-style: solid;
+        border-color:#f5f7ec;
+        border-radius: 50%;
+    }
+}
+/* MOBILE */
+@media only screen and (max-width: 450px) {
+    img {
+        max-height: 200px; 
+        max-width: 200px;
+        border-style: solid;
+        border-color:#f5f7ec;
+        border-radius: 50%;
+    }
+}
+
 
 /* Menu styling */
-#menu-ul, #menu-ul * {
-    list-style-type: none;
-    color:#f5f7ec;
-    margin:0;
-
-}
-#menu-ul {
-    padding: 20px 20px 0px 20px;
-}
 .menu {
     background:#11abb7;
     color:#f5f7ec;
     display:block;
-    width: 200px;
-    padding: 10px;
+    width: 100%;
+}
+.menu-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu-ul li{
+    float:left;
+}
+.menu-ul * {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 16px 10px 16px;
 
 }
 .menu h3 {
-    padding-left: 20px;
-    margin: 0;
+    margin:0;
+    padding: 10px;
+}
+/* MOBILE */
+@media only screen and (max-width: 450px) {
+     .menu-ul li {
+        float:none; 
+    }
+    .menu-ul * {
+        text-align: left;
+    }
+    /* .menu h3 {
+        font-size: 20px;
+    } */
 }
 
 /* Article and content styling */
@@ -93,17 +167,49 @@ img {
 section {
     margin: 100px 80px;
 }
+/* TABLET */
+@media only screen and (max-width: 780px) {
+    section {
+        margin: 50px 40px;
+    }
+}
+/* MOBILE */
+@media only screen and (max-width: 450px) {
+    section {
+        margin: 30px 20px;
+    }
+}
+
 
 /* Footer styling */
 .footer {
-    padding-left: 80px;
+    background-color:#3a5371;
+    padding: 16px 16px 50px 80px;
     color:#f5f7ec
 }
-#footer-ul * {
+.ul-footer * {
     list-style: none;
     color:#f5f7ec;
+    float: left;
+    padding-right: 10px;
 
 }
+/* TABLET */
+@media only screen and (max-width: 780px) {
+    .footer {
+        padding-left: 40px;
+        color:#f5f7ec
+    }
+}
+/* MOBILE */
+@media only screen and (max-width: 450px) {
+    .footer {
+        padding-left: 10px;
+        color:#f5f7ec
+    }
+}
+
+
 /* Form flexbox */
 .container {
     width:800px;
@@ -117,7 +223,7 @@ section {
     
 }
 .container input, textarea{
-    width: 300px;
+    width: 400px;
 }
 .container textarea {
     height: 5rem;
@@ -125,3 +231,15 @@ section {
 .container li {
     margin-bottom: 1rem;
 }
+/* TABLET */
+@media only screen and (max-width: 780px) {
+    .container input, textarea{
+        width: 300px;
+    }
+}
+/* MOBILE */
+@media only screen and (max-width: 450px) {
+        .container input, textarea{
+            width: 200px;
+        }
+    }
